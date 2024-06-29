@@ -33,3 +33,4 @@ function numberToString(num) {
 **University:** The National Research State University of Nizhny Novgorod named after N.I. Lobachevsky, UNN
 
 ## English
+**B1** - Intermediate. I try to constantly improve my English skills.
