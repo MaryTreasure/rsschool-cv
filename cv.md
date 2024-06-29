@@ -26,7 +26,10 @@ function numberToString(num) {
 ```
 
 ## Experience
+- From November 2023 to June 2024, I took part in an internship as a frontend developer
+- I have been working as a financial analyst since 2020
 
 ## Education
+**University:** The National Research State University of Nizhny Novgorod named after N.I. Lobachevsky, UNN
 
 ## English
