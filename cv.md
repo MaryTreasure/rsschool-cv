@@ -15,6 +15,8 @@ Hi there! I'm Maria. I work as a financial analyst. Now I'm learning frontend de
 - JavaScript
 - AntDesign
 - FSD
+- Figma
+- React JS/Next JS (basic)
 
 ## Code examples
 ```javascript
