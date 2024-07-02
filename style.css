@@ -2,6 +2,7 @@
   --main-color-orange: #DDB067;
   --main-color-blue: #78A8BC;
   --second-color-blue: #BFDBDE;
+  --secondary-orange: #974C18;
   --background-color: #F3F8F9;
   --font-color: #131E1D;
   --color-white: #FFFFFF;
@@ -15,6 +16,14 @@ body {
     background-color: var(--background-color);
     color: var(--font-color);
     font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+  }
+  a {
+    color: var(--font-color);
+  }
+  h1,
+  h2 {
+    font-family: "DM Sans", sans-serif;
   }
   h1 {
     font-size: 54px;
@@ -36,4 +45,19 @@ body {
   .container {
     max-width: 1140px;
     margin: 0 auto;
+  }
+  .background-blue {
+    background-color: var(--second-color-blue);
+  }
+  .header-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-list a {
+    text-decoration: none;
+  }
+  .header-list a:hover {
+    text-decoration: underline;
+    color: var(--secondary-orange);
   }
