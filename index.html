@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,7 +21,7 @@
   </head>
   <body>
     <div class="page-container">
-      <header class="background-blue">
+      <header class="background-blue header">
         <div class="container">
           <nav>
             <ul class="header-list">
@@ -37,7 +38,18 @@
         </div>
       </header>
       <main class="page-content">
-        <div class="container">Main content</div>
+        <div class="container">
+          <section class="main-block">
+            <div class="main-block__left">
+              <h1 class="main-block__heading">Maria Kladova</h1>
+              <span class="decorate-item">
+              </span>
+              <p class="main-block__text">Junior front-end developer</p>
+              <button class="main-block__button"><a href="mailto: mari199191@mail.ru">Email me</a></button>
+            </div>
+            <img src="images/main-photo.png" alt="author's photo">
+          </section>
+        </div>
       </main>
       <footer class="background-blue">
         <div class="container">Footer content</div>
