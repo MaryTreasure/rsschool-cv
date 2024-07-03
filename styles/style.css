@@ -37,9 +37,11 @@ body {
   h2 {
     font-size: 36px;
     margin: 0 0 var(--heading-gap) 0;
+
   }
   h3 {
     font-size: 30px;
+    font-weight: 400;
   }
   .page-container {
     display: flex;
@@ -185,4 +187,32 @@ body {
   .skills__list {
     display: flex;
     justify-content: space-between;
+  }
+  .projects {
+    margin-bottom: var(--block-gap);
+  }
+  .projects__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--block-gap);
+  }
+  .projects__link {
+    background-color: var(--main-color-blue);
+    border: none;
+    color: var(--color-white);
+  }
+  .projects__info a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 50px;
+
+  }
+  .projects__info {
+    max-width: 366px;
+  }
+  .code-example__heading {
+    text-align: center;
   }
