@@ -36,7 +36,7 @@ body {
   }
   h2 {
     font-size: 36px;
-    margin: 0;
+    margin: 0 0 var(--heading-gap) 0;
   }
   h3 {
     font-size: 30px;
@@ -75,7 +75,8 @@ body {
     justify-content: space-between;
     align-items: center;
   }
-  .decorate-item {
+  .decorate-item,
+  .decorate-item-center {
     height: 15px;
   }
   .decorate-item::before {
@@ -122,6 +123,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: var(--block-gap);
   }
   .info__about {
     max-width: 555px;
@@ -146,6 +148,41 @@ body {
   .info__contacts__list:last-child {
     padding: 0;
   }
-   .info h2 {
-    margin-bottom: var(--heading-gap);
+
+   .decorate-item-center {
+    display: block;
+    margin: auto;
+    width: 690px;
+    height: 20px;
+    margin-bottom: var(--block-gap);
+
    }
+
+  .decorate-item-center::before {
+    content: '';
+    display: block;
+    background-color: var(--main-color-orange);
+    height: 3px;
+    width: 590px;
+    margin-bottom: 15px;
+  }
+  .decorate-item-center::after {
+    content: '';
+    display: block;
+    background-color: var(--main-color-blue);
+    height: 3px;
+    width: 590px;
+    margin-left: 100px;
+  }
+  .skills {
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: var(--block-gap);
+  }
+  .skills__heading {
+    text-align: center;
+  }
+  .skills__list {
+    display: flex;
+    justify-content: space-between;
+  }
