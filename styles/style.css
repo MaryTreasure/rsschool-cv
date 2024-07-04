@@ -116,6 +116,10 @@ body {
     background-color: var(--main-color-orange);
     color: var(--color-white);
     height: 50px;
+    border-radius: 4px;
+  }
+  .main-block__btn:hover {
+    background-color: var(--secondary-orange);
   }
   .main-block__heading {
     padding-bottom: 35px;
@@ -152,6 +156,9 @@ body {
   }
   .info__contacts__list:last-child {
     padding: 0;
+  }
+  .info__contacts__list-item a:hover {
+    color: var(--secondary-orange);
   }
 
    .decorate-item-center {
@@ -208,7 +215,9 @@ body {
     align-items: center;
     width: 270px;
     height: 50px;
-
+  }
+  .projects__info a:hover {
+    background-color: var(--main-color-orange);
   }
   .projects__info {
     max-width: 366px;
