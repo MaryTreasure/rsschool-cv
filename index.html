@@ -1,13 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <header>Header content</header>
-    <main>Main content</main>
-    <footer>Footer content</footer>
-</body>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+  </head>
+  <body>
+    <div class="page-container">
+      <header class="background-blue header">
+        <div class="container">
+          <nav>
+            <ul class="header-list">
+              <li><a href="#contacts">Contacts</a></li>
+              <li><a href="#about">About me</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#code">Code examples</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="endlish">English</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="page-content">
+        <div class="container">
+          <section class="main-block">
+            <div class="main-block__left">
+              <h1 class="main-block__heading">Maria Kladova</h1>
+              <span class="decorate-item"> </span>
+              <p class="main-block__text">Junior front-end developer</p>
+              <a class="main-block__btn" href="mailto:mari199191@mail.ru">Email me</a>
+            </div>
+            <img src="images/main-photo.png" alt="author's photo">
+          </section>
+          <section id="about" class="info">
+            <div class="info__about">
+              <h2>About me</h2>
+              <p>
+                Hi there! I’m Maria. I work as a financial analyst. Now I’m
+                learning frontend development. I have implemented several small
+                projects, as well as participated in an internship where quite
+                large projects were developed. Now I want to improve my
+                knowledge. I am ready to help others and I want to get a new
+                experience.
+              </p>
+            </div>
+            <div id="contacts" class="info__contacts">
+              <h2>Contacts</h2>
+              <ul class="info__contacts__list">
+                <li class="info__contacts__list-item">
+                  <span class="text-bold">Email:</span>
+                  <a href="mailto:mari199191@mail.ru">mari199191@mail.ru</a>
+                </li>
+                <li class="info__contacts__list-item">
+                  <span class="text-bold">Telegram:</span>
+                  <a href="https://t.me/mary_treasure" target="_blank">Maria Kladova</a>
+                </li>
+                <li class="info__contacts__list-item">
+                  <span class="text-bold">GitHub:</span>
+                  <a href="https://github.com/MaryTreasure" target="_blank">MaryTreasure</a>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <span class="decorate-item-center"> </span>
+          <section class="skills" id="skills">
+            <h2 class="skills__heading">Skills</h2>
+            <div class="skills__list">
+              <ul>
+                <li>HTML 5</li>
+                <li>CSS 3</li>
+                <li>SASS/SCSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <ul>
+                <li>Ant Design</li>
+                <li>FSD</li>
+                <li>Figma</li>
+                <li>React JS/Next JS (basic)</li>
+              </ul>
+            </div>
+          </section>
+          <span class="decorate-item-center"></span>
+          <section class="projects" id="projects">
+            <h2>Projects</h2>
+            <div class="projects__block">
+              <img src="images/project-aiva.png" alt="Title of yoga studio Aiva project">
+              <div class="projects__info">
+                <h3>Yoga studio AIva</h3>
+                <p>
+                  Landing Page of yoga studio. Contains information about
+                  different types of yoga, trainers and class schedules.
+                </p>
+                <p>The application is developed according to our own design.</p>
+                <a class="projects__link" href="https://marytreasure.github.io/Aiva/" target="_blank">See project</a>
+              </div>
+            </div>
+            <div class="projects__block">
+              <div class="projects__info">
+                <h3>SkiPark</h3>
+                <p>
+                  Website about ski resort. Contains information about events at
+                  the resort, services, trainers, work schedule
+                </p>
+                <a class="projects__link" href="https://marytreasure.github.io/Ski-park/" target="_blank">
+                  See project
+                </a>
+              </div>
+              <img src="images/project-ski-park.png" alt="Title of yoga studio Ski-park project">
+            </div>
+            <div class="projects__block">
+              <img src="images/project-space.png" alt="Title of yoga studio Space-App project">
+              <div class="projects__info">
+                <h3>Space App</h3>
+                <p>
+                  The application contains information about the solar system
+                  and its planets. It also contains information obtained from
+                  NASA OPEN APIs
+                </p>
+                <p>The application is developed according to our own design.</p>
+                <a class="projects__link" href="https://space-app-seven.vercel.app/" target="_blank">
+                  See project
+                </a>
+              </div>
+            </div>
+          </section>
+          <span class="decorate-item-center"> </span>
+          <section class="code-example" id="code">
+            <h2 class="code-example__heading">Code example</h2>
+            <pre>
+              function initCap(str) {
+                let strToArr = str.split(' ');
+                for (let i = 0; i &lt; strToArr.length; i++){
+                  strToArr[i] = strToArr[i][0].toUpperCase() + strToArr[i].toLowerCase().slice(1);
+                }
+                let camelCase = strToArr.join('');
+                return camelCase; 
+              }
+            </pre>
+          </section>
+          <span class="decorate-item-center"> </span>
+          <section id="experience">
+            <h2>Experience</h2>
+            <ul>
+              <li>
+                From November 2023 to June 2024, I took part in an internship as
+                a frontend developer
+              </li>
+              <li>I have been working as a financial analyst since 2020</li>
+            </ul>
+          </section>
+          <span class="decorate-item-center"> </span>
+          <section class="education">
+            <div class="education__left" id="education">
+              <h2>Education</h2>
+              <ul>
+                <li class="list-item">
+                  <span class="text-bold">University: </span>The National
+                  Research State University of Nizhny Novgorod named after N.I.
+                  Lobachevsky, UNN
+                </li>
+                <li class="list-item">
+                  <span class="text-bold">Courses: </span>Courses:Lad-Academy,
+                  Web-technologies. 2022-2023
+                </li>
+              </ul>
+            </div>
+            <div class="education__right" id="english">
+              <h2>English</h2>
+              <p>
+                <span class="text-bold">B1</span> - Intermediate. I try to
+                constantly improve my English skills.
+              </p>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="background-blue">
+        <div class="container">
+          <div class="footer-content">
+            <a href="https://github.com/MaryTreasure" target="_blank">
+              <img src="images/icons/github_icon.svg" alt="GitHub icon">
+            </a>
+            <p class="footer-content__text">Created in June 2024</p>
+            <a href="https://app.rs.school/course/score?course=js-fe-preschool-2024q2" target="_blank">
+              <img src="images/icons/rsschool-icon.svg" alt="Rsschool icon">
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
