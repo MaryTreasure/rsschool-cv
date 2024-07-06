@@ -223,7 +223,10 @@ section {
 
 .skills__list {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  max-height: 130px;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 
 .projects__block {
